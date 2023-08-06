@@ -1,0 +1,65 @@
+.modal-container {
+  @apply rounded-lg shadow-md;
+  max-height: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: var(--modal-bg-color);
+
+  max-width: 400px;
+  border: 1px solid #2dd4bf;
+  border-radius: 2px;
+}
+
+.modal-container.wide {
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .modal-container.wide {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal-container.wide {
+    max-width: 800px;
+  }
+}
+
+.modal-content-inner {
+  overflow-y: auto;
+  max-height: 80vh;
+  @apply px-6 pb-12;
+}
+
+.modal-container.goto-bg {
+  transform: none;
+  top: 10rem;
+}
+
+.modal-sidebar {
+  background-color: var(--modal-sidebar-bg-color);
+}
+
+.modal-sidebar-item {
+  @apply transition w-full px-4 py-1 text-left;
+}
+
+.modal-sidebar-item:hover {
+  background-color: var(--modal-sidebar-item-hover-color);
+}
+
+.modal-sidebar-item.active {
+  background-color: var(--modal-sidebar-item-hover-color);
+}
+
+.modal-container input.input {
+  background-color: var(--modal-input-bg-color);
+  box-shadow: rgb(15 15 15 / 10%) 0px 0px 0px 1px inset;
+}

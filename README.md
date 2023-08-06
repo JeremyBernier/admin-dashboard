@@ -25,5 +25,3 @@ Open [http://localhost:3000](http://localhost:3000)
 ### Support
 
 [Contact me](https://www.jbernier.com/) for hiring inquiries
-
-# admin-dashboard
